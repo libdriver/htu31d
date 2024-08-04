@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/htu31d/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-HTU31是市場上最小、最準確的濕度感測器之一。 TE Connectivity精密工程和在濕度和溫度組合感測器方面20多年的經驗使這款新產品具有快速回應時間、精確量測、低滯後、對回流組裝過程的魯棒性和持續效能，即使暴露在極端溫度[-40°至125°C]和濕度[0%RH至100%RH]的環境中依然如此。
+HTU31是市場上最小、最準確的濕度感測器之一。 TE Connectivity精密工程和在濕度和溫度組合感測器方面20多年的經驗使這款新產品具有快速回應時間、精確量測、低滯後、對回流組裝過程的高魯棒性和持續效能，即使暴露在極端溫度[-40°至125°C]和濕度[0%RH至100%RH]的環境中依然如此。
 
 LibDriver HTU31D是LibDriver推出的HTU31D全功能驅動，該驅動提供溫度、相對濕度讀取的功能並且它符合MISRA標準。
 
