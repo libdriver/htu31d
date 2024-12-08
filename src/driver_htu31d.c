@@ -62,10 +62,10 @@
 
 /**
  * @brief     write bytes
- * @param[in] *handle points to an htu31d handle structure
- * @param[in] reg is the iic register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to an htu31d handle structure
+ * @param[in] reg iic register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -83,10 +83,10 @@ static uint8_t a_htu31d_write(htu31d_handle_t *handle, uint8_t reg, uint8_t *buf
 
 /**
  * @brief      read bytes
- * @param[in]  *handle points to an htu31d handle structure
- * @param[in]  reg is the iic register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[in]  reg iic register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -104,9 +104,9 @@ static uint8_t a_htu31d_read(htu31d_handle_t *handle, uint8_t reg, uint8_t *buf,
 
 /**
  * @brief     check the crc
- * @param[in] *buf points to a data buffer
- * @param[in] len is the buffer length
- * @param[in] crc is the checked crc
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len buffer length
+ * @param[in] crc checked crc
  * @return    status code
  *            - 0 pass
  *            - 1 error
@@ -163,8 +163,8 @@ static uint8_t a_htu31d_crc(uint8_t *buf, uint8_t len, uint32_t crc)
 
 /**
  * @brief     set the address pin
- * @param[in] *handle points to an htu31d handle structure
- * @param[in] addr_pin is the addr pin
+ * @param[in] *handle pointer to an htu31d handle structure
+ * @param[in] addr_pin addr pin
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -184,8 +184,8 @@ uint8_t htu31d_set_addr_pin(htu31d_handle_t *handle, htu31d_addr_pin_t addr_pin)
 
 /**
  * @brief      get the address pin
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *addr_pin points to an addr pin buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *addr_pin pointer to an addr pin buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -205,7 +205,7 @@ uint8_t htu31d_get_addr_pin(htu31d_handle_t *handle, htu31d_addr_pin_t *addr_pin
 
 /**
  * @brief     soft reset
- * @param[in] *handle points to an htu31d handle structure
+ * @param[in] *handle pointer to an htu31d handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -240,7 +240,7 @@ uint8_t htu31d_soft_reset(htu31d_handle_t *handle)
 
 /**
  * @brief     enable heater
- * @param[in] *handle points to an htu31d handle structure
+ * @param[in] *handle pointer to an htu31d handle structure
  * @return    status code
  *            - 0 success
  *            - 1 heater on failed
@@ -274,7 +274,7 @@ uint8_t htu31d_set_heater_on(htu31d_handle_t *handle)
 
 /**
  * @brief     disable heater
- * @param[in] *handle points to an htu31d handle structure
+ * @param[in] *handle pointer to an htu31d handle structure
  * @return    status code
  *            - 0 success
  *            - 1 heater off failed
@@ -308,8 +308,8 @@ uint8_t htu31d_set_heater_off(htu31d_handle_t *handle)
 
 /**
  * @brief      get the serial number
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *number points to a number buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *number pointer to a number buffer
  * @return     status code
  *             - 0 success
  *             - 1 get serial number failed
@@ -352,8 +352,8 @@ uint8_t htu31d_get_serial_number(htu31d_handle_t *handle, uint8_t number[3])
 
 /**
  * @brief      get the diagnostic
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *diagnostic points to a diagnostic buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *diagnostic pointer to a diagnostic buffer
  * @return     status code
  *             - 0 success
  *             - 1 get diagnostic failed
@@ -396,11 +396,11 @@ uint8_t htu31d_get_diagnostic(htu31d_handle_t *handle, uint8_t *diagnostic)
 
 /**
  * @brief      read the temperature and humidity data
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_s points to a converted temperature buffer
- * @param[out] *humidity_raw points to a raw humidity buffer
- * @param[out] *humidity_s points to a converted humidity buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_s pointer to a converted temperature buffer
+ * @param[out] *humidity_raw pointer to a raw humidity buffer
+ * @param[out] *humidity_s pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read temperature humidity failed
@@ -513,9 +513,9 @@ uint8_t htu31d_read_temperature_humidity(htu31d_handle_t *handle,
 
 /**
  * @brief      read the humidity data
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *humidity_raw points to a raw humidity buffer
- * @param[out] *humidity_s points to a converted humidity buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *humidity_raw pointer to a raw humidity buffer
+ * @param[out] *humidity_s pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read humidity failed
@@ -616,7 +616,7 @@ uint8_t htu31d_read_humidity(htu31d_handle_t *handle, uint16_t *humidity_raw, fl
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an htu31d handle structure
+ * @param[in] *handle pointer to an htu31d handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic initialization failed
@@ -690,7 +690,7 @@ uint8_t htu31d_init(htu31d_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an htu31d handle structure
+ * @param[in] *handle pointer to an htu31d handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -733,8 +733,8 @@ uint8_t htu31d_deinit(htu31d_handle_t *handle)
 
 /**
  * @brief     set humidity osr
- * @param[in] *handle points to an htu31d handle structure
- * @param[in] osr is the humidity osr
+ * @param[in] *handle pointer to an htu31d handle structure
+ * @param[in] osr humidity osr
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -759,8 +759,8 @@ uint8_t htu31d_set_humidity_osr(htu31d_handle_t *handle, htu31d_humidity_osr_t o
 
 /**
  * @brief      get humidity osr
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *osr points to a humidity osr buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *osr pointer to a humidity osr buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -785,8 +785,8 @@ uint8_t htu31d_get_humidity_osr(htu31d_handle_t *handle, htu31d_humidity_osr_t *
 
 /**
  * @brief     set temperature osr
- * @param[in] *handle points to an htu31d handle structure
- * @param[in] osr is the temperature osr
+ * @param[in] *handle pointer to an htu31d handle structure
+ * @param[in] osr temperature osr
  * @return    status code
  *            - 0 success
  *            - 2 handle is NULL
@@ -811,8 +811,8 @@ uint8_t htu31d_set_temperature_osr(htu31d_handle_t *handle, htu31d_temperature_o
 
 /**
  * @brief      get temperature osr
- * @param[in]  *handle points to an htu31d handle structure
- * @param[out] *osr points to a temperature osr buffer
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[out] *osr pointer to a temperature osr buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -837,10 +837,10 @@ uint8_t htu31d_get_temperature_osr(htu31d_handle_t *handle, htu31d_temperature_o
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to an htu31d handle structure
- * @param[in] reg is the reg address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to an htu31d handle structure
+ * @param[in] reg register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -864,10 +864,10 @@ uint8_t htu31d_set_reg(htu31d_handle_t *handle, uint8_t reg, uint8_t *buf, uint1
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to an htu31d handle structure
- * @param[in]  reg is the reg address
- * @param[out] *buf points to data buffer
- * @param[in]  len is the data length
+ * @param[in]  *handle pointer to an htu31d handle structure
+ * @param[in]  reg register address
+ * @param[out] *buf pointer to data buffer
+ * @param[in]  len data length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -891,7 +891,7 @@ uint8_t htu31d_get_reg(htu31d_handle_t *handle, uint8_t reg, uint8_t *buf, uint1
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an htu31d info structure
+ * @param[out] *info pointer to an htu31d info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
