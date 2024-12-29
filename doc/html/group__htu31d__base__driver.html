@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,8 +421,8 @@ Functions</h2></td></tr>
 <p>get the address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>points to an addr pin buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*addr_pin</td><td>pointer to an addr pin buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -466,8 +466,8 @@ Functions</h2></td></tr>
 <p>get the diagnostic </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*diagnostic</td><td>points to a diagnostic buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*diagnostic</td><td>pointer to a diagnostic buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -514,8 +514,8 @@ Functions</h2></td></tr>
 <p>get humidity osr </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*osr</td><td>points to a humidity osr buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*osr</td><td>pointer to a humidity osr buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -560,8 +560,8 @@ Functions</h2></td></tr>
 <p>get the serial number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*number</td><td>points to a number buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*number</td><td>pointer to a number buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -608,8 +608,8 @@ Functions</h2></td></tr>
 <p>get temperature osr </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*osr</td><td>points to a temperature osr buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*osr</td><td>pointer to a temperature osr buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -644,7 +644,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an htu31d info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an htu31d info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -678,7 +678,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -731,9 +731,9 @@ Functions</h2></td></tr>
 <p>read the humidity data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>points to a raw humidity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>points to a converted humidity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>pointer to a raw humidity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>pointer to a converted humidity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -799,11 +799,11 @@ Functions</h2></td></tr>
 <p>read the temperature and humidity data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>points to a converted temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>points to a raw humidity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>points to a converted humidity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>pointer to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>pointer to a raw humidity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>pointer to a converted humidity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -851,8 +851,8 @@ Functions</h2></td></tr>
 <p>set the address pin </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>is the addr pin </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr_pin</td><td>addr pin </td></tr>
   </table>
   </dd>
 </dl>
@@ -886,7 +886,7 @@ Functions</h2></td></tr>
 <p>disable heater </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -922,7 +922,7 @@ Functions</h2></td></tr>
 <p>enable heater </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -968,8 +968,8 @@ Functions</h2></td></tr>
 <p>set humidity osr </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">osr</td><td>is the humidity osr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">osr</td><td>humidity osr </td></tr>
   </table>
   </dd>
 </dl>
@@ -1014,8 +1014,8 @@ Functions</h2></td></tr>
 <p>set temperature osr </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">osr</td><td>is the temperature osr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">osr</td><td>temperature osr </td></tr>
   </table>
   </dd>
 </dl>
@@ -1050,7 +1050,7 @@ Functions</h2></td></tr>
 <p>soft reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an htu31d handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an htu31d handle structure </td></tr>
   </table>
   </dd>
 </dl>

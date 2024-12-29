@@ -52,7 +52,7 @@ extern "C"{
 
 /**
  * @brief     register test
- * @param[in] addr_pin is the addr pin
+ * @param[in] addr_pin addr pin
  * @return    status code
  *            - 0 success
  *            - 1 test failed
