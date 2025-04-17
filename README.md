@@ -10,7 +10,7 @@
 
 The HTU31 is one of the smallest and most accurate humidity sensors on the market. TE Connectivity precision engineering and 20+ years of experience in humidity and temperature combination sensors, enabled this new product with fast response time, precision measurement, low hysteresis, robustness to reflow assembly process and sustained performance even when exposed to extreme temperature [-40° to 125°C] and humidity [0%RH to 100%RH] environments.
 
-LibDriver HTU31D is the full function driver of HTU31D launched by LibDriver.It provides the function of reading temperature and relative humidity. LibDriver is MISRA compliant.
+LibDriver HTU31D is a full-featured driver of HTU31D launched by LibDriver.It provides the function of reading temperature and relative humidity. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
