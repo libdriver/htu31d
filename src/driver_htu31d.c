@@ -389,7 +389,7 @@ uint8_t htu31d_get_diagnostic(htu31d_handle_t *handle, uint8_t *diagnostic)
         
         return 4;                                                               /* return error */
     }
-    *diagnostic = buf[1];                                                       /* copy to diagnostic */
+    *diagnostic = buf[0];                                                       /* copy to diagnostic */
     
     return 0;                                                                   /* success return 0 */
 }
